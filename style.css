@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-column-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-column-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-column-1 {
+    grid-template-columns: 1fr;
+}
+
+.gap0 {
+    gap: 0px;
+}
+
+.gap2 {
+    gap: 2px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.gap12 {
+    gap: 12px;
+}
+
+.gap15 {
+    gap: 15px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.gap30 {
+    gap: 30px;
+}
+
+.gap40 {
+    gap: 40px;
+}
+
+.gap50 {
+    gap: 50px;
+}
+
+.gap60 {
+    gap: 60px;
+}
+
+.width80 {
+    width: 80%;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.hidden{
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d2333;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+
+.portfolioSec {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.portfolio {
+    height: 760px;
+    width: 1000px;
+    background-color: white;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    box-shadow: 0px 26px 29px -13px black;
+    padding: 20px 40px;
+    /* overflow-y: scroll; */
+
+}
+
+.info {
+    /* border: 2px solid black; */
+    height: 300px;
+    max-width: 100%;
+}
+
+.task {
+    /* border: 2px solid black; */
+    height: calc(750px - 300px);
+    max-width: 100%;
+}
+
+.img {
+    width: 25%;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+    top: -40px;
+    box-shadow: 0px 16px 20px -16px black;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    border-radius: 5px;
+}
+.about {
+    width: 75%;
+    height: 100%;
+}
+.likes{
+    height: 130%;
+    padding: 0px 40px;
+    border-left: 1px solid rgb(207, 207, 207);
+    border-right: 1px solid rgb(207, 207, 207);
+}
+.likes>span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+small{
+    opacity: 0.5;
+    font-size: 11px;
+}
+.followBtn{
+    padding: 0px 20px 0px 0px;
+}
+.followBtn button{
+    padding: 8px 20px;
+    border: 2px solid #ffb802;
+    background-color: #ffb802;
+    color: white;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.followBtn button:hover{
+    background-color: white;
+    color: #ffb802;
+}
+.followBtn button:hover svg{
+    color: #ffb802;
+}
+.nameInfo{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.skills > div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.skills > div div {
+    content: "";
+    width: 140px;
+    height: 4px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px;
+    position: relative; 
+}
+
+.skills > div p {
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+/* Specific styles for ::after pseudo-elements */
+.Equipment div::after,
+.Editing div::after,
+.Marketing div::after,
+.Retouching div::after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: rgb(66, 66, 66);
+    position: absolute;
+    top: -2.5px; /* Position the circle above the bar */
+    border-radius: 50%;
+}
+
+.Equipment div::after {
+    left: 70%;
+}
+
+.Editing div::after {
+    left: 60%;
+}
+
+.Marketing div::after {
+    left: 50%;
+}
+
+.Retouching div::after {
+    left: 90%;
+}
+.task>div{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+.task>div div{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.task>div div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    filter: grayscale(50%);
+}
+.task>div div>img:hover{
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+@media screen and (max-width:768px) {
+    .portfolio{
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        padding: 20px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:500px) {
+    .portfolio{
+        justify-content: flex-start;
+        border-radius: 0px;
+    }
+    .info{
+        flex-direction: column;
+        height: fit-content;
+        position: relative;
+        gap: 0px;
+        padding-bottom: 25px;
+    }
+    .task{
+        height: 100%;
+    }
+    .img{
+        top: 0px;
+        margin: 20px;
+        width: fit-content;
+    }
+    .about{
+        width: 100%;
+    }
+    .nameInfo{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 25px;
+        border: none;
+        align-items: center;
+        text-align: center;
+    }
+    .aboutMe{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 0px 18px;
+    }
+    .skills{
+        align-items: flex-start;
+    }
+    .followBtn{
+        padding: 0px;
+    }
+    .task>div{
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
+    }
+}
